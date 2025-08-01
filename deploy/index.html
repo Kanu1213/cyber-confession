@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>赛博告解室 - Cyber Confessional</title>
+    
+    <!-- PWA 支持 -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#c9a96e">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="赛博告解室">
+    
+    <!-- 图标 -->
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+    
+    <!-- SEO 优化 -->
+    <meta name="description" content="赛博告解室 - 一个基于基督教风格的数字化告解平台，让心灵得到净化">
+    <meta name="keywords" content="告解,忏悔,基督教,心灵,净化,赛博朋克">
+    <meta name="author" content="Cyber Confessional">
+    
+    <!-- 社交媒体分享 -->
+    <meta property="og:title" content="赛博告解室 - Cyber Confessional">
+    <meta property="og:description" content="一个基于基督教风格的数字化告解平台">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.com">
+    
+    <!-- 样式和字体 -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- 预加载关键资源 -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+</head>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博告解室 - Cyber Confessional</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <header class="header">
+            <div class="cross-icon">✞</div>
+            <h1 class="title">赛博告解室</h1>
+            <p class="subtitle">Cyber Confessional</p>
+        </header>
+
+        <!-- 发布告解区域 -->
+        <section class="confession-form">
+            <div class="form-container">
+                <h2>向主忏悔</h2>
+                <textarea 
+                    id="confessionText" 
+                    placeholder="在此倾诉你的罪过与忏悔..."
+                    maxlength="500"
+                ></textarea>
+                <div class="form-footer">
+                    <span class="char-count">0/500</span>
+                    <button id="submitBtn" class="submit-btn">
+                        <span class="btn-icon">🙏</span>
+                        提交告解
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 告解列表 -->
+        <section class="confessions-list">
+            <h2>众生告解</h2>
+            <div id="confessionsList" class="confessions-container">
+                <!-- 告解项目将通过JavaScript动态生成 -->
+            </div>
+        </section>
+    </div>
+
+    <!-- 模态框 -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "name": "cyber-confessional",
+  "version": "1.0.0",
+  "description": "赛博告解室 - 基于基督教风格的数字化告解平台",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "echo '构建完成'",
+    "deploy": "echo '部署脚本'",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "confession",
+    "christian",
+    "gothic",
+    "pwa",
+    "mobile"
+  ],
+  "author": "CodeBuddy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/cyber-confessional.git"
+  },
+  "homepage": "https://your-domain.com",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
